@@ -1,0 +1,21 @@
+.bule{
+	color: pink;
+}
+h1.bule{font-size: 30px;}
+.x{
+	color: green;
+}
+.z{
+	color: yellow;
+}
+em{
+	background-color: black;
+}
+a:hover{
+	color: red;
+	background-color: black;
+}
+body{
+			height: 10000px;
+              background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)
+		}
