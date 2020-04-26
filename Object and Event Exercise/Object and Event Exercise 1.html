@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object and Event Exercise 1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var product =  [
+    {
+        id : "1",
+        name : "Beef Meat",
+        image :  "Beef",
+        price : "500.000" ,
+        discounted : "15%"
+    },
+    {
+        id : "2",
+        name: "Pork Meat",
+        image :  "Pork",
+        price : "300.000" ,
+        discounted : "2%"
+    },
+    {
+        id : "3",
+        name: "Sea Fish",
+        image :  "Fish",
+        price : "120.000" ,
+        discounted : "8%"
+    },
+    {
+        id : "4",
+        name: "Chicken Meat",
+        image :  "Chicken",
+        price : "150.000" ,
+        discounted : "3%"
+    },
+    {
+        id : "5",
+        name: "Vegetable",
+        image :  "Vegetable",
+        price : "700.000" ,
+        discounted : "11%"
+    },
+]
+
+	console.log(product);
+window.onload = function printNameProduct() {
+    var x;
+    x = product[0].name;
+    for (let i = 1; i < product.length; i++) {
+        x = "<p>" + x + "<p>" + product[i].name + "</p>";
+    }
+    document.getElementById("id").innerHTML = x;
+};
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="row">
+			<div  class="col-12">
+				<h1   align="center" style="color: Black;">Excercise JS</h1>
+			</div>
+			<div class="col-12">
+				<h3>Food Menu</h3>
+				<p id="id"></p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
