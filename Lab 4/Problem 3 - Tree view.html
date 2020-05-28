@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 1. Tree view</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    .nav{
+      list-style-type: none;
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+    }
+    .nav > li {
+      display: inline-block;
+      padding: 10px 20px;
+      position: relative;
+
+    }
+    .nav > li:hover {
+      background-color: #f58220;
+    }
+    .nav > li:hover >a{
+      color: #fff;
+    }
+    .nav > li:hover > .sub-nav {
+      display: block;
+
+    }
+    .nav > li >a {
+      font-size: 14px;
+      color: #00384d;
+      font-weight: bold;
+      text-decoration: none;  
+      padding: 10px 20px;
+
+    }
+    .sub-nav{
+      display: none;
+      list-style-type: none;
+      position: absolute;
+      top: 38px;
+      left: 0px;
+      width: 200px;
+      text-align:left;
+      margin: 0px;
+      padding: 0px;
+      background-color: #eee; 
+    }
+    .sub-nav li{
+      padding: 10px 15px; 
+    }
+    .sub-nav li:hover{
+      color: #00348;
+      background-color: #00348d;
+    }
+    .sub-nav > li:hover >a{
+      color: #fff;
+      
+    }
+    .sub-nav >li >a{
+      font-size: 14px #00384d;
+      font-weight: bold;
+      text-decoration: none;    
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul class="nav">
+      <li><a href="#">TRANG CHỦ</a> </li>
+      <li><a href="#">HOA TẾT</a> </li>
+      <li><a href="#">CHỦ ĐỀ</a> 
+        <ul class="sub-nav">
+          <li><a href="#">HOA SINH NHẬT</a></li>
+          <li><a href="#">HOA KHAI TRƯƠNG</a></li>
+        </ul>
+      </li>
+      <li><a href="#">THIẾT KẾ</a> 
+        <ul class="sub-nav">
+          <li><a href="#">HOA BÓ</a></li>
+          <li><a href="#">HOA KỆ</a></li>
+          <li><a href="#">HOA HỘP</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+
+</body>
+</html>
