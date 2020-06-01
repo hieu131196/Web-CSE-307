@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array danh sach sinh vien</title>
+</head>
+<body>
+	<h2>Danh sach sinh vien</h2>
+
+	<script type="text/javascript">
+		// Function inDanhSach(Danh sach)
+		// {}
+		var arr  =[
+			"Hong duc - 123456",
+			"Van A - 7891011",
+			"Le thi Kim tuyen - 2316546",
+			"Ngo thua AN - 156238795",
+			"Nguyen Thi Cam Lan -234986165"];
+		for (index in arr)
+		{
+		 	document.writeln (arr[index] + "<br>");
+		}
+				document.writeln("<br>");		
+		 	// document.writeln ("<br><b>" + " Sau sua :" "<b><<br>");
+		 	// name[1]= "Nguyen Van B" ;
+		 	// for ( Let index in name) {
+		 	// 	// document.writeln("<br>" + " Nguyen Van B" + "<br>");
+		 	// }
+		arr.push( "Nguyen Van C");
+		for (index in arr)
+		{
+		 	document.writeln (arr[index] + "<br>");
+		}
+		document.writeln("<br>");	
+		arr.pop();
+		for (index in arr)
+		{
+		 	document.writeln (arr[index] + "<br>");
+		}
+		document.writeln("<br>");
+		arr.unshift();
+		for (index in arr)
+		{
+		 	document.writeln (arr[index] + "<br>");
+		}
+		document.writeln("<br>");
+		arr.shift();
+		for (index in arr)
+		{
+		 	document.writeln (arr[index] + "<br>");
+		}
+		// var.IndexOf("Le thi Bach Tuyet");
+		// for (index in arr)
+		// {
+		//  	document.writeln (arr[index] + "<br>");
+		// }
+
+
+
+
+		
+		
+	</script>
+
+</body>
+</html>
