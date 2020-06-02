@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - 9</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript">
+    function show() {
+        var str = document.getElementById("bold").innerHTML;
+        var values = document.getElementById('box1').value;
+        var cs = values.toLocaleUpperCase();
+
+        console.log(values);
+        console.log(cs);
+        var res = str.replace(values, cs);
+        document.getElementById("bold").innerHTML = res;
+    };
+    
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p id="bold">I like playing football and swimming</p>
+        <input name="box1" type="text" id="box1" value="football" />
+        <button onclick="show()">Change</button>
+    </div>
+</body>
+
+</html>

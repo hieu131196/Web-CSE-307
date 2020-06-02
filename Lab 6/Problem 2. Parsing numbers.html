@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript">
+        window.onload=function(){
+        document.getElementById("parseInt(str)").innerHTML = parseInt('1234');
+        document.getElementById("parseFloat(str)").innerHTML =parseFloat('1234');
+        document.getElementById("Number(str)").innerHTML =Number('1234');
+        document.getElementById("+str").innerHTML = +('1234');
+        document.getElementById("str | 0").innerHTML = ('1234') | 0;
+
+        document.getElementById("parseInt(str)2").innerHTML = parseInt('1238abc');
+        document.getElementById("parseFloat(str)2").innerHTML =parseFloat('1238abc');
+        document.getElementById("Number(str)2").innerHTML =Number('1238abc');
+        document.getElementById("+str2").innerHTML = +('1238abc');
+        document.getElementById("str | 02").innerHTML = ('1238abc') | 0;
+
+        document.getElementById("parseInt(str)3").innerHTML = parseInt('0.15');
+        document.getElementById("parseFloat(str)3").innerHTML =parseFloat('0.15');
+        document.getElementById("Number(str)3").innerHTML =Number('0.15');
+        document.getElementById("+str3").innerHTML = +('0.15');
+        document.getElementById("str | 03").innerHTML = ('0.15') | 0;
+
+
+        document.getElementById("parseInt(str)4").innerHTML = parseInt('3.14ivan');
+        document.getElementById("parseFloat(str)4").innerHTML =parseFloat('3.14ivan');
+        document.getElementById("Number(str)4").innerHTML =Number('3.14ivan');
+        document.getElementById("+str4").innerHTML = +('3.14ivan');
+        document.getElementById("str | 04").innerHTML = ('3.14ivan') | 0;
+
+        document.getElementById("parseInt(str)5").innerHTML = parseInt('Infinity');
+        document.getElementById("parseFloat(str)5").innerHTML =parseFloat('Infinity');
+        document.getElementById("Number(str)5").innerHTML =Number('Infinity');
+        document.getElementById("+str5").innerHTML = +('Infinity');
+        document.getElementById("str | 05").innerHTML = ('Infinity') | 0;
+
+        document.getElementById("parseInt(str)6").innerHTML = parseInt('99999999999999999999');
+        document.getElementById("parseFloat(str)6").innerHTML =parseFloat('99999999999999999999');
+        document.getElementById("Number(str)6").innerHTML =Number('99999999999999999999');
+        document.getElementById("+str6").innerHTML = +('99999999999999999999');
+        document.getElementById("str | 06").innerHTML = ('99999999999999999999') | 0;
+};
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>str</td>
+            <td>parseInt(str)</td>
+            <td>parseFloat(str)</td>
+            <td>Number(str)</td>
+            <td>+str</td>
+            <td>str | 0</td>
+        </tr>
+        <tr>
+            <td>'1234'</td>
+            <td><span id ='parseInt(str)'></span></td>
+            <td><span id='parseFloat(str)'></span></td>
+            <td><span id ='Number(str)'></span></td>
+            <td><span id ='+str'></span></td>
+            <td><span id ='str | 0'></span></td>
+        </tr>
+        <tr>
+            <td>'1238abc'</td>
+            <td><span id ='parseInt(str)2'></span></td>
+            <td><span id='parseFloat(str)2'></span></td>
+            <td><span id ='Number(str)2'></span></td>
+            <td><span id ='+str2'></span></td>
+            <td><span id ='str | 02'></span></td>
+        </tr>
+        <tr>
+            <td>'0.15'</td>
+            <td><span id ='parseInt(str)3'></span></td>
+            <td><span id='parseFloat(str)3'></span></td>
+            <td><span id ='Number(str)3'></span></td>
+            <td><span id ='+str3'></span></td>
+            <td><span id ='str | 03'></span></td>
+        </tr>
+        <tr>
+            <td>'3.14ivan'</td>
+            <td><span id ='parseInt(str)4'></span></td>
+            <td><span id='parseFloat(str)4'></span></td>
+            <td><span id ='Number(str)4'></span></td>
+            <td><span id ='+str4'></span></td>
+            <td><span id ='str | 04'></span></td>
+        </tr>
+        <tr>
+            <td>'Infinity'</td>
+            <td><span id ='parseInt(str)5'></span></td>
+            <td><span id='parseFloat(str)5'></span></td>
+            <td><span id ='Number(str)5'></span></td>
+            <td><span id ='+str5'></span></td>
+            <td><span id ='str | 05'></span></td>
+        </tr>
+        <tr>
+            <td>'99999999999999999999'</td>
+            <td><span id ='parseInt(str)6'></span></td>
+            <td><span id='parseFloat(str)6'></span></td>
+            <td><span id ='Number(str)6'></span></td>
+            <td><span id ='+str6'></span></td>
+            <td><span id ='str | 06'></span></td>
+        </tr>
+    </table>
+</body>
+
+</html>

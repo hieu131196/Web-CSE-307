@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - 7</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript">
+    function show() {
+        var values = document.getElementById('box1').value.split(/,/g);
+        var mf = 1;
+        var m = 0;
+        var item;
+        for (var i = 0; i < values.length; i++) {
+            for (var j = i; j < values.length; j++) {
+                if (values[i] == values[j])
+                    m++;
+                if (mf < m) {
+                    mf = m;
+                    item = values[i];
+                }
+            }
+            m = 0;
+        }
+        console.log(item + " ( " + mf + " times ) ");
+        document.querySelector('.sort').innerHTML = item + " ( " + mf + " times ) ";
+    };
+    
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <input name="box1" type="text" id="box1" value="3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3" />
+        <button onclick="show()">Show</button>
+        <div class="sort"></div>
+    </div>
+</body>
+
+</html>
